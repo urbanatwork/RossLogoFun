@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="rossLogoCanvas" width="400" height="400" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("rossLogoCanvas");
+var ctx = c.getContext("2d");
+
+for (i = 0; i < 8; i++) {
+ctx.beginPath(
+ctx.ellipse(200, 300-(i*30), 20-(i*1.5), 20+(i*10+(i*5.5)), 45 * Math.PI/90, 0, 2 * Math.PI);
+ctx.fillStyle = "#000000";  //Color in RRGGBB (red, green, blue)
+ctx.fill();
+ctx.stroke();
+}
+</script> 
+<a href="http://www.ross.org/">Ross School</a>
+</body>
+</html>
